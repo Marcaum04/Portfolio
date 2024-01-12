@@ -1,4 +1,4 @@
-import { Home, WriteNowPage } from "pages";
+import { Home, Curriculo } from "pages";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 export function AppRoutes() {
@@ -7,7 +7,7 @@ export function AppRoutes() {
             <Routes>
                 <Route path="/" element={<Home/>} />
                 <Route path="/home" element={<Home/>} />
-                <Route path="/escrever-agora" element={<WriteNowPage/>} />
+                <Route path="/curriculo" element={<Curriculo/>} />
             </Routes>
         </BrowserRouter>
     );

@@ -1,2 +1,2 @@
 export * from './Home';
-export * from './WriteNowPage';
+export * from './Curriculo';
