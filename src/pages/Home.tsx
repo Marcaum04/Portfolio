@@ -10,12 +10,13 @@ ChartJS.register(
     Legend
 )
 
+
 export function Home(){
     const data = {
         labels: ['HTML', 'CSS', 'JavaScript', 'C#', 'Python', 'SQL', 'C'],
         datasets: [
             {
-                data: [1,2,3],
+                data: [1,2,3,1,2,6,1],
                 backgroundColor: 'aqua',
                 borderColor: 'black',
                 borderWidth: 1,
@@ -31,49 +32,32 @@ export function Home(){
             }
         },
         scales: {
-          x: {
-            title: {
-                display: true,
-                text: 'Linguagens',
-                color: 'white',
-            font: {
-                family: 'Arial',
-                size: 14,
-                weight: 'bold' as const,
-                },
-            }
-          },
-          y: {
-            title: {
-                display: true,
-                text: 'Experiência',
-                color: 'white',
-            font: {
-                family: 'Arial',
-                size: 14,
-                weight: 'bold' as const,
-                },
-            }
-          },
-          yAxes: {
-            ticks: {
-                callback: function(label, index, labels) {
-                    switch (label) {
-                        case 0:
-                            return 'Iniciante';
-                        case 1:
-                            return 'Intermediário';
-                        case 2:
-                            return 'Avançado';
-                        case 3:
-                            return 'Expert';
+            x: {
+                title: {
+                    display: true,
+                    text: 'Linguagens',
+                    color: 'white',
+                    font: {
+                        family: 'Arial',
+                        size: 14,
+                        weight: 'bold' as const,
                     }
+                },
+            },
+            y: {
+                title: {
+                    display: true,
+                    text: 'Experiência',
+                    color: 'white',
+                    font: {
+                        family: 'Arial',
+                        size: 14,
+                        weight: 'bold' as const,
+                    },
                 }
-            }
-          }
-    }
+            },
+        }
 }
-
     return(
         <div className="bg-fundo">
             <div className="w-80v mx-auto my-0 flex flex-col">
